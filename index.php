@@ -233,7 +233,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['view_images'])) {
     </form>
 
     <!-- HTML form for image viewing -->
-    <h1>View Images</h1>
+    <h1>View Images Lapar</h1>
     <form action="index.php" method="GET">
         <label for="view_folder">Select a folder to view images:</label>
         <select name="folder" id="view_folder">
@@ -242,6 +242,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['view_images'])) {
             <option value="Case003">Case003</option>
         </select>
         <input type="submit" name="view_images" value="View Images">
+        <input type="submit" name="download" value="1" class="download-link" id="download_zip" />
     </form>
 
     <!-- Feedback area for displaying messages -->

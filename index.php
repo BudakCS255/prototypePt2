@@ -17,7 +17,7 @@ function xor_encrypt_decrypt($data, $key) {
 }
 
 // Check if the download GET parameter is set
-if (isset($_GET['download']) && $_GET['download'] == 1 && isset($_GET['folder'])) {
+if (isset($_GET['download']) && $_GET['download'] == 'download' && isset($_GET['folder'])) {
     // Sanitize the folder input
     $selectedFolder = sanitize_folder($_GET['folder']);
     
@@ -242,7 +242,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['view_images'])) {
             <option value="Case003">Case003</option>
         </select>
         <input type="submit" name="view_images" value="View Images">
-        <input type="submit" name="download" value="1" class="download-link" id="download_zip" />
+        <input type="submit" name="download" value="download" class="download-link" id="download_zip" />
     </form>
 
     <!-- Feedback area for displaying messages -->

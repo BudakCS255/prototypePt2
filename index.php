@@ -242,7 +242,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['view_images'])) {
             <option value="Case003">Case003</option>
         </select>
         <input type="submit" name="view_images" value="View Images">
-        <input type="submit" name="download" value="1" class="download-link" id="download_zip" />
+        <input type="hidden" name="download" value="1" />
+        <button type="submit" class="download-link" id="download_zip">Click here to download</button>
     </form>
 
     <!-- Feedback area for displaying messages -->

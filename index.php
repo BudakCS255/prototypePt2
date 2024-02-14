@@ -242,9 +242,12 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['view_images'])) {
             <option value="Case003">Case003</option>
         </select>
         <input type="submit" name="view_images" value="View Images">
+        <!-- Hidden input for the download parameter -->
         <input type="hidden" name="download" value="1" />
+        <!-- Download button with updated text -->
         <button type="submit" class="download-link" id="download_zip">Click here to download</button>
     </form>
+
 
     <!-- Feedback area for displaying messages -->
     <div id="upload-feedback">

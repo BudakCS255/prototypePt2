@@ -242,13 +242,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['view_images'])) {
             <option value="Case003">Case003</option>
         </select>
         <input type="submit" name="view_images" value="View Images">
-        <!-- Conditional rendering of the download button -->
-        <?php if (isset($_GET['download'])): ?>
-            <input type="hidden" name="download" value="1" />
-            <button type="submit" class="download-link" id="download_zip">Click here to download</button>
-        <?php else: ?>
-            <input type="submit" name="download" value="1" class="download-link" id="download_zip" />
-        <?php endif; ?>
+        <input type="submit" name="download" value="1" class="download-link" id="download_zip" />
     </form>
 
     <!-- Feedback area for displaying messages -->
